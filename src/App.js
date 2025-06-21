@@ -139,6 +139,9 @@ function App() {
         /><br /><br />
         <button className="btn" onClick={handleLogin}>Login</button>
         <button className="btn" onClick={handleGuest}>Continue as Guest</button>
+      <div >
+      <h4>Made by Gobinath with ❤️ and a crab that won't stop dancing.</h4>
+    </div>
       </div>
     );
   }
@@ -197,6 +200,10 @@ function App() {
       <button className="btn" onClick={logout} style={{ marginTop: '20px' }}>
         Go to Login Page
       </button>
+    
+    <div >
+      <h4>Made by Gobinath with ❤️ and a crab that won't stop dancing.</h4>
+    </div>
     </div>
   );
 }
