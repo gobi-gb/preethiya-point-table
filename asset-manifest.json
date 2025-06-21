@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/preethiya-point-table/static/css/main.ac648869.css",
+    "main.js": "/preethiya-point-table/static/js/main.b2d718e6.js",
+    "static/media/crab.png": "/preethiya-point-table/static/media/crab.008e64a3d286c0e68980.png",
+    "index.html": "/preethiya-point-table/index.html",
+    "main.ac648869.css.map": "/preethiya-point-table/static/css/main.ac648869.css.map",
+    "main.b2d718e6.js.map": "/preethiya-point-table/static/js/main.b2d718e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac648869.css",
+    "static/js/main.b2d718e6.js"
+  ]
+}
