@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #fbc2eb, #a6c1ee, #fcd3a1, #f7a9a8);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2 {
+  color: #fff;
+  text-shadow: 1px 1px 4px #333;
+  text-align: center;
+}
+
+.login-container, .app-container {
+  text-align: center;
+  padding: 30px;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  width: 220px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6a11cb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2575fc;
+}
+
+table {
+  background: rgba(255, 255, 255, 0.95);
+  margin: 20px auto;
+  width: 85%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #6a11cb;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.btn, .btn-sm {
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 16px;
+  background-color: #6a11cb;
+  color: white;
+  margin: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #2575fc;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  margin: 2px;
+  font-size: 0.85rem;
+}
+
+.btn-sm:hover {
+  transform: scale(1.1);
+}
+
+.danger {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.danger:hover {
+  background-color: #d60000;
+}
+
+@keyframes moveRandomly {
+  0%   { top: 10%; left: 5%; transform: rotate(0deg); }
+  20%  { top: 30%; left: 70%; transform: rotate(20deg); }
+  40%  { top: 60%; left: 20%; transform: rotate(-15deg); }
+  60%  { top: 40%; left: 90%; transform: rotate(10deg); }
+  80%  { top: 70%; left: 40%; transform: rotate(-5deg); }
+  100% { top: 10%; left: 5%; transform: rotate(0deg); }
+}
+
+.moving-png {
+  position: fixed;
+  width: 5cm;
+  height: 5cm;
+  background-image: url('crab.png'); /* Update path as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 3;
+  animation: moveRandomly 25s linear infinite;
+}
